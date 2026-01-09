@@ -1,0 +1,393 @@
+{
+  "policies": [
+    {
+      "allowed_clients": {
+        "assigned": [],
+        "exclude": [],
+        "filter": null,
+        "include": [
+          "0oayx4pszgzL9w4RY697",
+          "0oayx4sey61p51p8r697"
+        ]
+      },
+      "policy": {
+        "_links": {
+          "deactivate": {
+            "hints": {
+              "allow": [
+                "POST"
+              ]
+            },
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/policies/00pz1a6fy2AxhdVVq697/lifecycle/deactivate"
+          },
+          "rules": {
+            "hints": {
+              "allow": [
+                "GET"
+              ]
+            },
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/policies/00pz1a6fy2AxhdVVq697/rules"
+          },
+          "self": {
+            "hints": {
+              "allow": [
+                "GET",
+                "PUT",
+                "DELETE"
+              ]
+            },
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/policies/00pz1a6fy2AxhdVVq697"
+          }
+        },
+        "conditions": {
+          "clients": {
+            "include": [
+              "0oayx4pszgzL9w4RY697",
+              "0oayx4sey61p51p8r697"
+            ]
+          }
+        },
+        "created": "2026-01-09T15:02:53.000Z",
+        "description": "Access policy for Test-App2",
+        "id": "00pz1a6fy2AxhdVVq697",
+        "lastUpdated": "2026-01-09T15:02:53.000Z",
+        "name": "Test-App2-access-policy",
+        "priority": 1,
+        "status": "ACTIVE",
+        "system": false,
+        "type": "OAUTH_AUTHORIZATION_POLICY"
+      },
+      "rules": [
+        {
+          "_links": {
+            "deactivate": {
+              "hints": {
+                "allow": [
+                  "POST"
+                ]
+              },
+              "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/policies/00pz1a6fy2AxhdVVq697/rules/0prz1aehmmHqjXoI5697/lifecycle/deactivate"
+            },
+            "self": {
+              "hints": {
+                "allow": [
+                  "GET",
+                  "PUT",
+                  "DELETE"
+                ]
+              },
+              "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/policies/00pz1a6fy2AxhdVVq697/rules/0prz1aehmmHqjXoI5697"
+            }
+          },
+          "actions": {
+            "token": {
+              "accessTokenLifetimeMinutes": 60,
+              "refreshTokenLifetimeMinutes": 0,
+              "refreshTokenWindowMinutes": 10080
+            }
+          },
+          "conditions": {
+            "grantTypes": {
+              "include": [
+                "client_credentials"
+              ]
+            },
+            "people": {
+              "users": {
+                "exclude": []
+              }
+            },
+            "scopes": {
+              "include": [
+                "*"
+              ]
+            }
+          },
+          "created": "2026-01-09T15:02:55.000Z",
+          "id": "0prz1aehmmHqjXoI5697",
+          "lastUpdated": "2026-01-09T15:02:55.000Z",
+          "name": "Test-App2-client-credentials",
+          "priority": 1,
+          "status": "ACTIVE",
+          "system": false,
+          "type": "RESOURCE_ACCESS"
+        }
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6tjoZN5rT697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "Signals that a request is an OpenID request.",
+      "displayName": "openid",
+      "id": "scpz1a5r6tjoZN5rT697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "openid",
+      "optional": false,
+      "system": true
+    },
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6uGmbb4HO697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "The exact data varies based on what profile information you have provided, such as: name, time zone, picture, or birthday.",
+      "displayName": "View your profile information.",
+      "id": "scpz1a5r6uGmbb4HO697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "profile",
+      "optional": false,
+      "system": true
+    },
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6vH01KWuN697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "This allows the app to view your email address.",
+      "displayName": "View your email address.",
+      "id": "scpz1a5r6vH01KWuN697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "email",
+      "optional": false,
+      "system": true
+    },
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6wANdD22e697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "This allows the app to view your address, such as: street address, city, state, and zip code.",
+      "displayName": "View your address.",
+      "id": "scpz1a5r6wANdD22e697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "address",
+      "optional": false,
+      "system": true
+    },
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6xgY9vmAu697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "This allows the app to view your phone number.",
+      "displayName": "View your phone number.",
+      "id": "scpz1a5r6xgY9vmAu697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "phone",
+      "optional": false,
+      "system": true
+    },
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6yNLX1Lyf697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "This keeps you signed in to the app, even when you are not using it.",
+      "displayName": "Keep you signed in to the app.",
+      "id": "scpz1a5r6yNLX1Lyf697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "offline_access",
+      "optional": false,
+      "system": true
+    },
+    {
+      "_links": {
+        "self": {
+          "hints": {
+            "allow": [
+              "GET",
+              "PUT",
+              "DELETE"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes/scpz1a5r6z9U1A6Lc697"
+        }
+      },
+      "apiResourceId": null,
+      "consent": "IMPLICIT",
+      "default": false,
+      "description": "This allows you to single sign on between native client applications on your device.",
+      "displayName": "Request device secret.",
+      "id": "scpz1a5r6z9U1A6Lc697",
+      "metadataPublish": "ALL_CLIENTS",
+      "name": "device_sso",
+      "optional": false,
+      "system": true
+    }
+  ],
+  "server": {
+    "_links": {
+      "claims": {
+        "hints": {
+          "allow": [
+            "GET",
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/claims"
+      },
+      "deactivate": {
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/lifecycle/deactivate"
+      },
+      "keys": {
+        "hints": {
+          "allow": [
+            "GET"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/credentials/keys"
+      },
+      "metadata": [
+        {
+          "hints": {
+            "allow": [
+              "GET"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/oauth2/ausz1a5r6r2iVV6Um697/.well-known/oauth-authorization-server",
+          "name": "oauth-authorization-server"
+        },
+        {
+          "hints": {
+            "allow": [
+              "GET"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/oauth2/ausz1a5r6r2iVV6Um697/.well-known/openid-configuration",
+          "name": "openid-configuration"
+        }
+      ],
+      "policies": {
+        "hints": {
+          "allow": [
+            "GET",
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/policies"
+      },
+      "rotateKey": {
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/credentials/lifecycle/keyRotate"
+      },
+      "scopes": {
+        "hints": {
+          "allow": [
+            "GET",
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697/scopes"
+      },
+      "self": {
+        "hints": {
+          "allow": [
+            "GET",
+            "DELETE",
+            "PUT"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/ausz1a5r6r2iVV6Um697"
+      }
+    },
+    "audiences": [
+      "api://Test-App2"
+    ],
+    "created": "2026-01-09T15:02:52.000Z",
+    "credentials": {
+      "signing": {
+        "kid": "RGCfrwhloLuI4qNkXt_SuTSaJzxaKARJytB7y6c0c2Y",
+        "lastRotated": "2026-01-09T15:02:52.000Z",
+        "nextRotation": "2026-04-09T15:02:52.000Z",
+        "rotationMode": "AUTO"
+      }
+    },
+    "default": false,
+    "description": "Authorization server for Test-App2",
+    "id": "ausz1a5r6r2iVV6Um697",
+    "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausz1a5r6r2iVV6Um697",
+    "issuerMode": "ORG_URL",
+    "lastUpdated": "2026-01-09T15:02:52.000Z",
+    "name": "Test-App2-auth-server",
+    "status": "ACTIVE"
+  }
+}

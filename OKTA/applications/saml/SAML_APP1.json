@@ -1,0 +1,161 @@
+{
+  "_links": {
+    "accessPolicy": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cabfcKmYH697"
+    },
+    "appLinks": [
+      {
+        "href": "https://demo-automation-terraform-12601.okta.com/home/demo-automation-terraform-12601_samlapp1_2/0oayx4rsp861Tuoza697/alnyx59pakWnsV1o3697",
+        "name": "demo-automation-terraform-12601_samlapp1_2_link",
+        "type": "text/html"
+      }
+    ],
+    "deactivate": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4rsp861Tuoza697/lifecycle/deactivate"
+    },
+    "groups": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4rsp861Tuoza697/groups"
+    },
+    "help": {
+      "href": "https://demo-automation-terraform-12601-admin.okta.com/app/demo-automation-terraform-12601_samlapp1_2/0oayx4rsp861Tuoza697/setup/help/SAML_2_0/instructions",
+      "type": "text/html"
+    },
+    "logo": [
+      {
+        "href": "https://ok14static.oktacdn.com/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
+        "name": "medium",
+        "type": "image/png"
+      }
+    ],
+    "metadata": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4rsp861Tuoza697/sso/saml/metadata",
+      "type": "application/xml"
+    },
+    "policies": {
+      "hints": {
+        "allow": [
+          "PUT"
+        ]
+      },
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4rsp861Tuoza697/policies"
+    },
+    "profileEnrollment": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cc0D7Ft6J697"
+    },
+    "uploadLogo": {
+      "hints": {
+        "allow": [
+          "POST"
+        ]
+      },
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4rsp861Tuoza697/logo"
+    },
+    "users": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4rsp861Tuoza697/users"
+    }
+  },
+  "accessibility": {
+    "errorRedirectUrl": null,
+    "loginRedirectUrl": null,
+    "selfService": false
+  },
+  "created": "2026-01-06T14:35:47.000Z",
+  "credentials": {
+    "signing": {
+      "kid": "eRXp_PHDBKj3CGvAQgBSkAWroEDp8usJfaf5jb1WTYY"
+    },
+    "userNameTemplate": {
+      "template": "${source.login}",
+      "type": "BUILT_IN"
+    }
+  },
+  "features": [],
+  "id": "0oayx4rsp861Tuoza697",
+  "label": "SAML APP1",
+  "lastUpdated": "2026-01-06T14:35:47.000Z",
+  "name": "demo-automation-terraform-12601_samlapp1_2",
+  "orn": "orn:okta:idp:00oye8z74hoxMErrs697:apps:demo-automation-terraform-12601_samlapp1_2:0oayx4rsp861Tuoza697",
+  "settings": {
+    "app": {},
+    "emOptInStatus": "NONE",
+    "implicitAssignment": false,
+    "manualProvisioning": false,
+    "notes": {
+      "admin": null,
+      "enduser": null
+    },
+    "notifications": {
+      "vpn": {
+        "helpUrl": null,
+        "message": null,
+        "network": {
+          "connection": "DISABLED"
+        }
+      }
+    },
+    "signOn": {
+      "acsEndpoints": [],
+      "allowMultipleAcsEndpoints": false,
+      "assertionEncryption": {
+        "enabled": false
+      },
+      "assertionSigned": true,
+      "attributeStatements": [
+        {
+          "name": "email",
+          "namespace": "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified",
+          "type": "EXPRESSION",
+          "values": [
+            "user.email"
+          ]
+        },
+        {
+          "filterType": "STARTS_WITH",
+          "filterValue": "test",
+          "name": "groupName",
+          "namespace": "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified",
+          "type": "GROUP"
+        }
+      ],
+      "audience": "https://auth.gmail.com/2L6HIlXaS2xnQKsiIF2zBs4Af",
+      "authnContextClassRef": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+      "defaultRelayState": "",
+      "destination": "https://auth.workos.com/sso/saml/acs/2L6HIlXaS2xnQKsiIF2zBs4Af",
+      "digestAlgorithm": "SHA256",
+      "honorForceAuthn": true,
+      "idpIssuer": "http://www.okta.com/${org.externalKey}",
+      "inlineHooks": [],
+      "recipient": "https://auth.workos.com/sso/saml/acs/2L6HIlXaS2xnQKsiIF2zBs4Af",
+      "requestCompressed": false,
+      "responseSigned": true,
+      "samlSignedRequestEnabled": false,
+      "signatureAlgorithm": "RSA_SHA256",
+      "slo": {
+        "enabled": false
+      },
+      "spIssuer": null,
+      "ssoAcsUrl": "https://auth.workos.com/sso/saml/acs/2L6HIlXaS2xnQKsiIF2zBs4Af",
+      "subjectNameIdFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+      "subjectNameIdTemplate": "${user.userName}"
+    }
+  },
+  "signOnMode": "SAML_2_0",
+  "status": "ACTIVE",
+  "universalLogout": {
+    "identityStack": "NOT_SHARED",
+    "protocol": "GLOBAL_TOKEN_REVOCATION",
+    "status": "DISABLED",
+    "supportType": "FULL"
+  },
+  "visibility": {
+    "appLinks": {
+      "demo-automation-terraform-12601_samlapp1_2_link": true
+    },
+    "autoLaunch": false,
+    "autoSubmitToolbar": false,
+    "hide": {
+      "iOS": false,
+      "web": false
+    }
+  }
+}

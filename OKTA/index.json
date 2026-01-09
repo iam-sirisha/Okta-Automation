@@ -1,0 +1,292 @@
+{
+  "apps": [
+    {
+      "category": "web",
+      "clientIds": [],
+      "file": "applications\\web_type_apps\\My_Web_App.json",
+      "id": "0oayx3vkhc6HGcDXW697",
+      "label": "My Web App",
+      "name": "oidc_client",
+      "signOnMode": "OPENID_CONNECT"
+    },
+    {
+      "category": "web",
+      "clientIds": [],
+      "file": "applications\\web_type_apps\\Test-App2.json",
+      "id": "0oayx4pszgzL9w4RY697",
+      "label": "Test-App2",
+      "name": "oidc_client",
+      "signOnMode": "OPENID_CONNECT"
+    },
+    {
+      "category": "saml",
+      "clientIds": [],
+      "file": "applications\\saml\\SAML_APP1.json",
+      "id": "0oayx4rsp861Tuoza697",
+      "label": "SAML APP1",
+      "name": "demo-automation-terraform-12601_samlapp1_2",
+      "signOnMode": "SAML_2_0"
+    },
+    {
+      "category": "web",
+      "clientIds": [],
+      "file": "applications\\web_type_apps\\Test-App1.json",
+      "id": "0oayx4sey61p51p8r697",
+      "label": "Test-App1",
+      "name": "oidc_client",
+      "signOnMode": "OPENID_CONNECT"
+    }
+  ],
+  "apps_count": 4,
+  "authz_count": 12,
+  "authz_servers": [
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Admin_Console_AUTH_SERVER.json",
+      "id": "ausyytorv7GUrBZJy697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyytorv7GUrBZJy697",
+      "name": "Okta Admin Console"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Demo_Platform_Management_AUTH_SERVER.json",
+      "id": "ausyyula62Fvc9Nlg697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyula62Fvc9Nlg697",
+      "name": "Demo Platform Management"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Browser_Plugin_AUTH_SERVER.json",
+      "id": "ausyyumqmoVeRdKiS697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyumqmoVeRdKiS697",
+      "name": "Okta Browser Plugin"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Dashboard_AUTH_SERVER.json",
+      "id": "ausyyumuwpX5v45t3697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyumuwpX5v45t3697",
+      "name": "Okta Dashboard"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Access_Certification_Reviews_AUTH_SERVER.json",
+      "id": "ausyyuovocsXwrbQ8697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyuovocsXwrbQ8697",
+      "name": "Okta Access Certification Reviews"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Workflows_OAuth_AUTH_SERVER.json",
+      "id": "ausyyupxdc2TOEcs5697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyupxdc2TOEcs5697",
+      "name": "Okta Workflows OAuth"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Identity_Governance_AUTH_SERVER.json",
+      "id": "ausyyur1oyHDHDY8h697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyur1oyHDHDY8h697",
+      "name": "Okta Identity Governance"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\My_Web_App_AUTH_SERVER.json",
+      "id": "ausyyutfv5SlVCsng697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyutfv5SlVCsng697",
+      "name": "My Web App"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Workflows_AUTH_SERVER.json",
+      "id": "ausyyuz6ba3fLKae8697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyuz6ba3fLKae8697",
+      "name": "Okta Workflows"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": []
+      },
+      "associatedApps": [],
+      "default": false,
+      "file": "auth-server-configs\\Okta_Access_Requests_AUTH_SERVER.json",
+      "id": "ausyyuz6ff5PcXK67697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausyyuz6ff5PcXK67697",
+      "name": "Okta Access Requests"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": [
+          "0oayx4pszgzL9w4RY697",
+          "0oayx4sey61p51p8r697"
+        ]
+      },
+      "associatedApps": [
+        {
+          "category": null,
+          "clientId": "0oayx4pszgzL9w4RY697",
+          "file": null,
+          "id": null,
+          "label": null,
+          "name": null,
+          "signOnMode": "OPENID_CONNECT"
+        },
+        {
+          "category": null,
+          "clientId": "0oayx4sey61p51p8r697",
+          "file": null,
+          "id": null,
+          "label": null,
+          "name": null,
+          "signOnMode": "OPENID_CONNECT"
+        }
+      ],
+      "default": false,
+      "file": "auth-server-configs\\Test-App2-auth-server_AUTH_SERVER.json",
+      "id": "ausz1a5r6r2iVV6Um697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausz1a5r6r2iVV6Um697",
+      "name": "Test-App2-auth-server"
+    },
+    {
+      "allowedClientsSummary": {
+        "assigned": [],
+        "exclude": [],
+        "filters": [],
+        "include": [
+          "0oayx4pszgzL9w4RY697",
+          "0oayx4sey61p51p8r697"
+        ]
+      },
+      "associatedApps": [
+        {
+          "category": null,
+          "clientId": "0oayx4pszgzL9w4RY697",
+          "file": null,
+          "id": null,
+          "label": null,
+          "name": null,
+          "signOnMode": "OPENID_CONNECT"
+        },
+        {
+          "category": null,
+          "clientId": "0oayx4sey61p51p8r697",
+          "file": null,
+          "id": null,
+          "label": null,
+          "name": null,
+          "signOnMode": "OPENID_CONNECT"
+        }
+      ],
+      "default": false,
+      "file": "auth-server-configs\\Test-App1-auth-server_AUTH_SERVER.json",
+      "id": "ausz1ab7s49ecBRUW697",
+      "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/ausz1ab7s49ecBRUW697",
+      "name": "Test-App1-auth-server"
+    }
+  ],
+  "generated_at": 1767976056,
+  "oauth_apps_with_authz": [],
+  "oauth_apps_without_authz": [
+    {
+      "app": {
+        "category": "web",
+        "clientIds": [],
+        "file": "applications\\web_type_apps\\My_Web_App.json",
+        "id": "0oayx3vkhc6HGcDXW697",
+        "label": "My Web App",
+        "name": "oidc_client"
+      }
+    },
+    {
+      "app": {
+        "category": "web",
+        "clientIds": [],
+        "file": "applications\\web_type_apps\\Test-App1.json",
+        "id": "0oayx4sey61p51p8r697",
+        "label": "Test-App1",
+        "name": "oidc_client"
+      }
+    },
+    {
+      "app": {
+        "category": "web",
+        "clientIds": [],
+        "file": "applications\\web_type_apps\\Test-App2.json",
+        "id": "0oayx4pszgzL9w4RY697",
+        "label": "Test-App2",
+        "name": "oidc_client"
+      }
+    }
+  ],
+  "root_repo": "C:\\Users\\sai.shireesha\\Downloads\\okta-deployments-master\\okta-deployments-master\\OKTA",
+  "source_org": "demo-automation-terraform-12601-admin.okta.com/"
+}

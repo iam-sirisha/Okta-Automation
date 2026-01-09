@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"auth_servers","Source":"./modules/auth_server","Dir":"modules/auth_server"},{"Key":"oidc_apps","Source":"./modules/oidc_app","Dir":"modules/oidc_app"},{"Key":"saml_apps","Source":"./modules/saml_app","Dir":"modules/saml_app"}]}

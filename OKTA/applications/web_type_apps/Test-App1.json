@@ -1,0 +1,149 @@
+{
+  "_links": {
+    "accessPolicy": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstywu4atxLflzIrH697"
+    },
+    "appLinks": [
+      {
+        "href": "https://demo-automation-terraform-12601.okta.com/home/oidc_client/0oayx4sey61p51p8r697/aln177a159h7Zf52X0g8",
+        "name": "oidc_client_link",
+        "type": "text/html"
+      }
+    ],
+    "clientCredentials": [
+      {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4sey61p51p8r697/credentials/secrets",
+        "name": "secrets"
+      }
+    ],
+    "deactivate": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4sey61p51p8r697/lifecycle/deactivate"
+    },
+    "groups": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4sey61p51p8r697/groups"
+    },
+    "logo": [
+      {
+        "href": "https://ok14static.oktacdn.com/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
+        "name": "medium",
+        "type": "image/png"
+      }
+    ],
+    "policies": {
+      "hints": {
+        "allow": [
+          "PUT"
+        ]
+      },
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4sey61p51p8r697/policies"
+    },
+    "profileEnrollment": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cc0D7Ft6J697"
+    },
+    "uploadLogo": {
+      "hints": {
+        "allow": [
+          "POST"
+        ]
+      },
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4sey61p51p8r697/logo"
+    },
+    "users": {
+      "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oayx4sey61p51p8r697/users"
+    }
+  },
+  "accessibility": {
+    "errorRedirectUrl": null,
+    "loginRedirectUrl": null,
+    "selfService": false
+  },
+  "created": "2026-01-06T14:35:47.000Z",
+  "credentials": {
+    "oauthClient": {
+      "autoKeyRotation": true,
+      "client_id": "0oayx4sey61p51p8r697",
+      "pkce_required": false,
+      "token_endpoint_auth_method": "client_secret_basic"
+    },
+    "signing": {
+      "kid": "_SCqUs6pYBOo3ojX3Y79P6O7I8x3Rfit6JpD_7lIG2s"
+    },
+    "userNameTemplate": {
+      "template": "${source.login}",
+      "type": "BUILT_IN"
+    }
+  },
+  "features": [],
+  "id": "0oayx4sey61p51p8r697",
+  "label": "Test-App1",
+  "lastUpdated": "2026-01-06T14:35:48.000Z",
+  "name": "oidc_client",
+  "orn": "orn:okta:idp:00oye8z74hoxMErrs697:apps:oidc_client:0oayx4sey61p51p8r697",
+  "settings": {
+    "app": {},
+    "emOptInStatus": "NONE",
+    "implicitAssignment": false,
+    "manualProvisioning": false,
+    "notes": {
+      "admin": null,
+      "enduser": null
+    },
+    "notifications": {
+      "vpn": {
+        "helpUrl": null,
+        "message": null,
+        "network": {
+          "connection": "DISABLED"
+        }
+      }
+    },
+    "oauthClient": {
+      "application_type": "web",
+      "client_uri": null,
+      "consent_method": "TRUSTED",
+      "dpop_bound_access_tokens": false,
+      "grant_types": [
+        "authorization_code",
+        "refresh_token"
+      ],
+      "idp_initiated_login": {
+        "default_scope": [],
+        "mode": "DISABLED"
+      },
+      "issuer_mode": "ORG_URL",
+      "logo_uri": null,
+      "post_logout_redirect_uris": [
+        "https://example.com"
+      ],
+      "redirect_uris": [
+        "https://test.example.com/callback"
+      ],
+      "refresh_token": {
+        "rotation_type": "STATIC"
+      },
+      "response_types": [
+        "code"
+      ],
+      "wildcard_redirect": "DISABLED"
+    }
+  },
+  "signOnMode": "OPENID_CONNECT",
+  "status": "ACTIVE",
+  "universalLogout": {
+    "identityStack": "NOT_SHARED",
+    "protocol": "GLOBAL_TOKEN_REVOCATION",
+    "status": "DISABLED",
+    "supportType": "FULL"
+  },
+  "visibility": {
+    "appLinks": {
+      "oidc_client_link": true
+    },
+    "autoLaunch": false,
+    "autoSubmitToolbar": false,
+    "hide": {
+      "iOS": true,
+      "web": true
+    }
+  }
+}
