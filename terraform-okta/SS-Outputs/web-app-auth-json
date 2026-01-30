@@ -1,0 +1,230 @@
+{
+  "policies": [
+    {
+      "policy": {
+        "_links": {
+          "deactivate": {
+            "hints": {
+              "allow": [
+                "POST"
+              ]
+            },
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/policies/00pzn91ig0ElKFKOC697/lifecycle/deactivate"
+          },
+          "rules": {
+            "hints": {
+              "allow": [
+                "GET"
+              ]
+            },
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/policies/00pzn91ig0ElKFKOC697/rules"
+          },
+          "self": {
+            "hints": {
+              "allow": [
+                "GET",
+                "PUT",
+                "DELETE"
+              ]
+            },
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/policies/00pzn91ig0ElKFKOC697"
+          }
+        },
+        "conditions": {
+          "clients": {
+            "include": [
+              "0oazn788v7fCyBfQZ697"
+            ]
+          }
+        },
+        "created": "2026-01-29T16:03:43.000Z",
+        "description": "Standard OIDC Access Policy",
+        "id": "00pzn91ig0ElKFKOC697",
+        "lastUpdated": "2026-01-29T16:03:43.000Z",
+        "name": "Standard OIDC Access Policy",
+        "priority": 1,
+        "status": "ACTIVE",
+        "system": false,
+        "type": "OAUTH_AUTHORIZATION_POLICY"
+      },
+      "rules": [
+        {
+          "_links": {
+            "deactivate": {
+              "hints": {
+                "allow": [
+                  "POST"
+                ]
+              },
+              "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/policies/00pzn91ig0ElKFKOC697/rules/0przn92vsqjsRP3fh697/lifecycle/deactivate"
+            },
+            "self": {
+              "hints": {
+                "allow": [
+                  "GET",
+                  "PUT",
+                  "DELETE"
+                ]
+              },
+              "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/policies/00pzn91ig0ElKFKOC697/rules/0przn92vsqjsRP3fh697"
+            }
+          },
+          "actions": {
+            "token": {
+              "accessTokenLifetimeMinutes": 60,
+              "refreshTokenLifetimeMinutes": 480,
+              "refreshTokenWindowMinutes": 480
+            }
+          },
+          "conditions": {
+            "grantTypes": {
+              "include": [
+                "client_credentials",
+                "urn:ietf:params:oauth:grant-type:device_code",
+                "authorization_code"
+              ]
+            },
+            "people": {
+              "groups": {
+                "exclude": [],
+                "include": [
+                  "EVERYONE"
+                ]
+              },
+              "users": {
+                "exclude": [],
+                "include": []
+              }
+            },
+            "scopes": {
+              "include": [
+                "*"
+              ]
+            }
+          },
+          "created": "2026-01-29T16:03:58.000Z",
+          "id": "0przn92vsqjsRP3fh697",
+          "lastUpdated": "2026-01-29T16:03:58.000Z",
+          "name": "Standard OIDC Access Policy Rule",
+          "priority": 1,
+          "status": "ACTIVE",
+          "system": false,
+          "type": "RESOURCE_ACCESS"
+        }
+      ]
+    }
+  ],
+  "server": {
+    "_links": {
+      "claims": {
+        "hints": {
+          "allow": [
+            "GET",
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/claims"
+      },
+      "deactivate": {
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/lifecycle/deactivate"
+      },
+      "keys": {
+        "hints": {
+          "allow": [
+            "GET"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/credentials/keys"
+      },
+      "metadata": [
+        {
+          "hints": {
+            "allow": [
+              "GET"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/oauth2/auszn8sc34OzBXd5g697/.well-known/oauth-authorization-server",
+          "name": "oauth-authorization-server"
+        },
+        {
+          "hints": {
+            "allow": [
+              "GET"
+            ]
+          },
+          "href": "https://demo-automation-terraform-12601.okta.com/oauth2/auszn8sc34OzBXd5g697/.well-known/openid-configuration",
+          "name": "openid-configuration"
+        }
+      ],
+      "policies": {
+        "hints": {
+          "allow": [
+            "GET",
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/policies"
+      },
+      "resourceServerCredentialsKeys": {
+        "hints": {
+          "allow": [
+            "GET"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/resourceservercredentials/keys"
+      },
+      "rotateKey": {
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/credentials/lifecycle/keyRotate"
+      },
+      "scopes": {
+        "hints": {
+          "allow": [
+            "GET",
+            "POST"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697/scopes"
+      },
+      "self": {
+        "hints": {
+          "allow": [
+            "GET",
+            "DELETE",
+            "PUT"
+          ]
+        },
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/authorizationServers/auszn8sc34OzBXd5g697"
+      }
+    },
+    "audiences": [
+      "APP3535693"
+    ],
+    "created": "2026-01-29T15:59:47.000Z",
+    "credentials": {
+      "signing": {
+        "kid": "qUt38jPPhQJyS4_Yhpoh7_TEM0bTMCMuPDMTDSE6vGo",
+        "lastRotated": "2026-01-29T15:59:47.000Z",
+        "nextRotation": "2026-04-29T15:59:47.000Z",
+        "rotationMode": "AUTO"
+      }
+    },
+    "default": false,
+    "description": "APP3535693",
+    "id": "auszn8sc34OzBXd5g697",
+    "issuer": "https://demo-automation-terraform-12601.okta.com/oauth2/auszn8sc34OzBXd5g697",
+    "issuerMode": "DYNAMIC",
+    "lastUpdated": "2026-01-29T15:59:47.000Z",
+    "name": "APP3535693",
+    "status": "ACTIVE"
+  }
+}
