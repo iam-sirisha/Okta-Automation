@@ -1,0 +1,143 @@
+{
+  "application": {
+    "id": "0oazquf0cnP9lo7Nw697",
+    "orn": "orn:okta:idp:00oye8z74hoxMErrs697:apps:demo-automation-terraform-12601_safetyawardsappl3_1:0oazquf0cnP9lo7Nw697",
+    "name": "demo-automation-terraform-12601_safetyawardsappl3_1",
+    "label": "SafetyAwards APP-L3",
+    "status": "ACTIVE",
+    "lastUpdated": "2026-02-02T10:08:42.000Z",
+    "created": "2026-02-02T10:08:40.000Z",
+    "accessibility": {
+      "selfService": false,
+      "errorRedirectUrl": null,
+      "loginRedirectUrl": null
+    },
+    "visibility": {
+      "autoSubmitToolbar": false,
+      "hide": {
+        "iOS": false,
+        "web": false
+      },
+      "appLinks": {
+        "demo-automation-terraform-12601_safetyawardsappl3_1_link": true
+      }
+    },
+    "features": [],
+    "signOnMode": "SAML_2_0",
+    "credentials": {
+      "userNameTemplate": {
+        "template": "${source.login}",
+        "type": "BUILT_IN"
+      },
+      "signing": {
+        "kid": "pzC_1ipK5SKZQHeIxJntSl-SSziW_Z0Btv4E2TIXDdk"
+      }
+    },
+    "universalLogout": {
+      "status": "DISABLED",
+      "supportType": "FULL",
+      "identityStack": "NOT_SHARED",
+      "protocol": "GLOBAL_TOKEN_REVOCATION"
+    },
+    "settings": {
+      "app": {},
+      "notifications": {
+        "vpn": {
+          "network": {
+            "connection": "DISABLED"
+          },
+          "message": null,
+          "helpUrl": null
+        }
+      },
+      "manualProvisioning": false,
+      "implicitAssignment": false,
+      "emOptInStatus": "NONE",
+      "signOn": {
+        "defaultRelayState": "",
+        "ssoAcsUrl": "https://safetyawards-l3.test.cloud.fedex.com/saml2/sp/acs/post",
+        "idpIssuer": "http://www.okta.com/${org.externalKey}",
+        "audience": "https://safetyawards-l3.test.cloud.fedex.com",
+        "recipient": "https://safetyawards-l3.test.cloud.fedex.com/saml2/sp/acs/post",
+        "destination": "https://safetyawards-l3.test.cloud.fedex.com/saml2/sp/acs/post",
+        "subjectNameIdTemplate": "${user.userName}",
+        "subjectNameIdFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "responseSigned": true,
+        "assertionSigned": true,
+        "signatureAlgorithm": "RSA_SHA256",
+        "digestAlgorithm": "SHA256",
+        "honorForceAuthn": true,
+        "authnContextClassRef": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
+        "spIssuer": null,
+        "requestCompressed": false,
+        "attributeStatements": [],
+        "inlineHooks": [],
+        "assertionEncryption": {
+          "enabled": false
+        },
+        "allowMultipleAcsEndpoints": false,
+        "acsEndpoints": [],
+        "samlSignedRequestEnabled": false,
+        "slo": {
+          "enabled": false
+        }
+      }
+    },
+    "_links": {
+      "help": {
+        "href": "https://demo-automation-terraform-12601-admin.okta.com/app/demo-automation-terraform-12601_safetyawardsappl3_1/0oazquf0cnP9lo7Nw697/setup/help/SAML_2_0/instructions",
+        "type": "text/html"
+      },
+      "metadata": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazquf0cnP9lo7Nw697/sso/saml/metadata",
+        "type": "application/xml"
+      },
+      "uploadLogo": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazquf0cnP9lo7Nw697/logo",
+        "hints": {
+          "allow": [
+            "POST"
+          ]
+        }
+      },
+      "appLinks": [
+        {
+          "name": "demo-automation-terraform-12601_safetyawardsappl3_1_link",
+          "href": "https://demo-automation-terraform-12601.okta.com/home/demo-automation-terraform-12601_safetyawardsappl3_1/0oazquf0cnP9lo7Nw697/alnzqur7ehg7yRd4C697",
+          "type": "text/html"
+        }
+      ],
+      "profileEnrollment": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cc0D7Ft6J697"
+      },
+      "policies": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazquf0cnP9lo7Nw697/policies",
+        "hints": {
+          "allow": [
+            "PUT"
+          ]
+        }
+      },
+      "groups": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazquf0cnP9lo7Nw697/groups"
+      },
+      "logo": [
+        {
+          "name": "medium",
+          "href": "https://ok14static.oktacdn.com/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
+          "type": "image/png"
+        }
+      ],
+      "accessPolicy": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cabfcKmYH697"
+      },
+      "users": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazquf0cnP9lo7Nw697/users"
+      },
+      "deactivate": {
+        "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazquf0cnP9lo7Nw697/lifecycle/deactivate"
+      }
+    }
+  },
+  "authorizationServers": []
+}
