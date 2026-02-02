@@ -1,144 +1,19 @@
 saml_apps = {
-  "app3535876-mda-l1": {
-    "app": {
-      "id": "0oazn7c0g7qo0i58Z697",
-      "orn": "orn:okta:idp:00oye8z74hoxMErrs697:apps:demo-automation-terraform-12601_app3535876mdal1_1:0oazn7c0g7qo0i58Z697",
-      "name": "demo-automation-terraform-12601_app3535876mdal1_1",
-      "label": "APP3535876-MDA-L1",
-      "status": "ACTIVE",
-      "lastUpdated": "2026-01-29T15:31:00.000Z",
-      "created": "2026-01-29T15:30:59.000Z",
-      "accessibility": {
-        "selfService": false,
-        "errorRedirectUrl": null,
-        "loginRedirectUrl": null
-      },
-      "visibility": {
-        "autoSubmitToolbar": false,
-        "hide": {
-          "iOS": false,
-          "web": false
-        },
-        "appLinks": {
-          "demo-automation-terraform-12601_app3535876mdal1_1_link": true
-        }
-      },
-      "features": [],
-      "signOnMode": "SAML_2_0",
-      "credentials": {
-        "userNameTemplate": {
-          "template": "${source.login}",
-          "type": "BUILT_IN"
-        },
-        "signing": {
-          "kid": "6iMGrD2mYOctuYQCWC1dGMxRaDX1JIulMbPs1ZGhhAQ"
-        }
-      },
-      "universalLogout": {
-        "status": "DISABLED",
-        "supportType": "FULL",
-        "identityStack": "NOT_SHARED",
-        "protocol": "GLOBAL_TOKEN_REVOCATION"
-      },
-      "settings": {
-        "app": {},
-        "notifications": {
-          "vpn": {
-            "network": {
-              "connection": "DISABLED"
-            },
-            "message": null,
-            "helpUrl": null
-          }
-        },
-        "manualProvisioning": false,
-        "implicitAssignment": false,
-        "emOptInStatus": "NONE",
-        "signOn": {
-          "defaultRelayState": "",
-          "ssoAcsUrl": "https://ocuil1wm1.logistics.fedex.com:11001/",
-          "idpIssuer": "http://www.okta.com/${org.externalKey}",
-          "audience": "mda",
-          "recipient": "https://ocuil1wm1.logistics.fedex.com:11001/",
-          "destination": "https://ocuil1wm1.logistics.fedex.com:11001/",
-          "subjectNameIdTemplate": "${user.userName}",
-          "subjectNameIdFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
-          "responseSigned": true,
-          "assertionSigned": true,
-          "signatureAlgorithm": "RSA_SHA256",
-          "digestAlgorithm": "SHA256",
-          "honorForceAuthn": true,
-          "authnContextClassRef": "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport",
-          "spIssuer": null,
-          "requestCompressed": false,
-          "attributeStatements": [],
-          "inlineHooks": [],
-          "assertionEncryption": {
-            "enabled": false
-          },
-          "allowMultipleAcsEndpoints": false,
-          "acsEndpoints": [],
-          "samlSignedRequestEnabled": false,
-          "slo": {
-            "enabled": false
-          }
-        }
-      },
-      "_links": {
-        "help": {
-          "href": "https://demo-automation-terraform-12601-admin.okta.com/app/demo-automation-terraform-12601_app3535876mdal1_1/0oazn7c0g7qo0i58Z697/setup/help/SAML_2_0/instructions",
-          "type": "text/html"
-        },
-        "metadata": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7c0g7qo0i58Z697/sso/saml/metadata",
-          "type": "application/xml"
-        },
-        "uploadLogo": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7c0g7qo0i58Z697/logo",
-          "hints": {
-            "allow": [
-              "POST"
-            ]
-          }
-        },
-        "appLinks": [
-          {
-            "name": "demo-automation-terraform-12601_app3535876mdal1_1_link",
-            "href": "https://demo-automation-terraform-12601.okta.com/home/demo-automation-terraform-12601_app3535876mdal1_1/0oazn7c0g7qo0i58Z697/alnzn7r5i00wB3C1C697",
-            "type": "text/html"
-          }
-        ],
-        "profileEnrollment": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cc0D7Ft6J697"
-        },
-        "policies": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7c0g7qo0i58Z697/policies",
-          "hints": {
-            "allow": [
-              "PUT"
-            ]
-          }
-        },
-        "groups": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7c0g7qo0i58Z697/groups"
-        },
-        "logo": [
-          {
-            "name": "medium",
-            "href": "https://ok14static.oktacdn.com/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
-            "type": "image/png"
-          }
-        ],
-        "accessPolicy": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cabfcKmYH697"
-        },
-        "users": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7c0g7qo0i58Z697/users"
-        },
-        "deactivate": {
-          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7c0g7qo0i58Z697/lifecycle/deactivate"
-        }
-      }
-    }
+  APP3535876_MDA_L1 = {
+    label = "APP3535876-MDA-L1"
+    sso_acs_url = "https://ocuil1wm1.logistics.fedex.com:11001/"
+    recipient = "https://ocuil1wm1.logistics.fedex.com:11001/"
+    destination = "https://ocuil1wm1.logistics.fedex.com:11001/"
+    audience = "mda"
+    idp_issuer = "http://www.okta.com/$${org.externalKey}"
+    subject_name_id_template = "$${user.userName}"
+    subject_name_id_format = "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+    response_signed = true
+    assertion_signed = true
+    signature_algorithm = "RSA_SHA256"
+    digest_algorithm = "SHA256"
+    honor_force_authn = true
+    authn_context_class_ref = "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport"
+    attribute_statements = []
   }
 }
