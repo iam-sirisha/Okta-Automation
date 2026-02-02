@@ -1,0 +1,145 @@
+service_apps = {
+  "my_api_services_app-_service": {
+    "app": {
+      "id": "0oazn7r3mb5MB4wLt697",
+      "orn": "orn:okta:idp:00oye8z74hoxMErrs697:apps:oidc_client:0oazn7r3mb5MB4wLt697",
+      "name": "oidc_client",
+      "label": "My API Services App- Service",
+      "status": "ACTIVE",
+      "lastUpdated": "2026-01-29T15:38:10.000Z",
+      "created": "2026-01-29T15:38:10.000Z",
+      "accessibility": {
+        "selfService": false,
+        "errorRedirectUrl": null,
+        "loginRedirectUrl": null
+      },
+      "visibility": {
+        "autoLaunch": false,
+        "autoSubmitToolbar": false,
+        "hide": {
+          "iOS": true,
+          "web": true
+        },
+        "appLinks": {
+          "oidc_client_link": true
+        }
+      },
+      "features": [],
+      "signOnMode": "OPENID_CONNECT",
+      "credentials": {
+        "userNameTemplate": {
+          "template": "${source.login}",
+          "type": "BUILT_IN"
+        },
+        "signing": {
+          "kid": "_SCqUs6pYBOo3ojX3Y79P6O7I8x3Rfit6JpD_7lIG2s"
+        },
+        "oauthClient": {
+          "autoKeyRotation": true,
+          "client_id": "0oazn7r3mb5MB4wLt697",
+          "token_endpoint_auth_method": "client_secret_basic",
+          "pkce_required": false
+        }
+      },
+      "universalLogout": {
+        "status": "DISABLED",
+        "supportType": "FULL",
+        "identityStack": "NOT_SHARED",
+        "protocol": "GLOBAL_TOKEN_REVOCATION"
+      },
+      "settings": {
+        "app": {},
+        "notifications": {
+          "vpn": {
+            "network": {
+              "connection": "DISABLED"
+            },
+            "message": null,
+            "helpUrl": null
+          }
+        },
+        "manualProvisioning": false,
+        "implicitAssignment": false,
+        "emOptInStatus": "NONE",
+        "notes": {
+          "admin": null,
+          "enduser": null
+        },
+        "oauthClient": {
+          "client_uri": null,
+          "logo_uri": null,
+          "redirect_uris": [],
+          "response_types": [
+            "token"
+          ],
+          "grant_types": [
+            "client_credentials"
+          ],
+          "application_type": "service",
+          "consent_method": "REQUIRED",
+          "issuer_mode": "DYNAMIC",
+          "idp_initiated_login": {
+            "mode": "DISABLED",
+            "default_scope": []
+          },
+          "wildcard_redirect": "DISABLED",
+          "dpop_bound_access_tokens": true
+        }
+      },
+      "_links": {
+        "uploadLogo": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7r3mb5MB4wLt697/logo",
+          "hints": {
+            "allow": [
+              "POST"
+            ]
+          }
+        },
+        "appLinks": [
+          {
+            "name": "oidc_client_link",
+            "href": "https://demo-automation-terraform-12601.okta.com/home/oidc_client/0oazn7r3mb5MB4wLt697/aln177a159h7Zf52X0g8",
+            "type": "text/html"
+          }
+        ],
+        "profileEnrollment": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cc0D7Ft6J697"
+        },
+        "policies": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7r3mb5MB4wLt697/policies",
+          "hints": {
+            "allow": [
+              "PUT"
+            ]
+          }
+        },
+        "groups": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7r3mb5MB4wLt697/groups"
+        },
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok14static.oktacdn.com/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
+            "type": "image/png"
+          }
+        ],
+        "clientCredentials": [
+          {
+            "name": "secrets",
+            "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7r3mb5MB4wLt697/credentials/secrets"
+          }
+        ],
+        "accessPolicy": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/policies/rstye8z7cabfcKmYH697"
+        },
+        "users": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7r3mb5MB4wLt697/users"
+        },
+        "deactivate": {
+          "href": "https://demo-automation-terraform-12601.okta.com/api/v1/apps/0oazn7r3mb5MB4wLt697/lifecycle/deactivate"
+        }
+      }
+    },
+    "authorization_servers": []
+  }
+}
